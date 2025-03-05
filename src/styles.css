@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+header button {
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header button:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+#hero {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.home-hero {
+    background-image: url('./assets/images/patrick-tomasso-NlcCPeKNmwg-unsplash.jpg');
+}
+
+.about-hero {
+    background-image: url('./assets/images/jay-wennington-N_Y88TWmGwA-unsplash.jpg');
+}
+
+.menu-hero {
+    background-image: url('./assets/images/nicolas-thomas-6ko6Z5GGv14-unsplash.jpg');
+}
+
+.contact-hero {
+    background-image: url('./assets/images/abillion-F0e3AdcwVbM-unsplash.jpg');
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+#hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    z-index: 2;
+}
+
+#hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    z-index: 2;
+}
+
+#hero button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #ff6347; /* Tomato color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 2;
+    transition: background-color 0.3s ease;
+}
+
+#hero button:hover {
+    background-color: #ff4500; /* Darker tomato color */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+#menu {
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.menu-category {
+    margin-bottom: 2rem;
+}
+
+.category-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.menu-item {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.item-name {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.item-description {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #666;
+}
+
+.item-price {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+#contact {
+    padding: 2rem;
+    background-color: #fff;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#contact-form label {
+    font-size: 1rem;
+    color: #333;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#contact-form button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #ff6347; /* Tomato color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: #ff4500; /* Darker tomato color */
+}
